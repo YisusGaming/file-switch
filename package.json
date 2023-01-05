@@ -5,9 +5,17 @@
     "description": "A program that allows you to reproduce audio files and convert them to different audio formats.",
     "main": "build/index.js",
     "scripts": {
-        "start": "node build/index.js",
-        "build": "tsc"
+        "start": "electron build/index.js",
+        "start:dev": "nodemon build/index.js --exec electron",
+        "build": "tsc",
+        "build:dev": "tsc -w"
     },
     "author": "YisusGaming",
-    "license": "CC-BY-NC-ND-4.0"
+    "license": "CC-BY-NC-ND-4.0",
+    "dependencies": {
+        "electron": "^22.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
 }
