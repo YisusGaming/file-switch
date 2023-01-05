@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "name": "file-switch",
+    "version": "1.0.0",
+    "description": "A program that allows you to reproduce audio files and convert them to different audio formats.",
+    "main": "build/index.js",
+    "scripts": {
+        "start": "node build/index.js",
+        "build": "tsc"
+    },
+    "author": "YisusGaming",
+    "license": "CC-BY-NC-ND-4.0"
+}
