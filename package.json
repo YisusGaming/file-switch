@@ -5,8 +5,8 @@
     "description": "A program that allows you to reproduce audio files and convert them to different audio formats.",
     "main": "build/index.js",
     "scripts": {
-        "start": "electron build/index.js",
-        "start:dev": "nodemon build/index.js --exec electron",
+        "start": "cp -r ./src/public ./build && electron build/index.js",
+        "start:dev": "nodemon build/index.js",
         "build": "tsc",
         "build:dev": "tsc -w"
     },
